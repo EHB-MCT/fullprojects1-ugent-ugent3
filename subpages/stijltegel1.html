@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <script src="https://kit.fontawesome.com/4e68a29348.js" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body id="stijltegel1">
     <nav>
@@ -33,7 +36,7 @@
         </video>
     </header>
 
-    <section id="kleuren">
+    <section id="kleuren" data-aos="fade-up" data-aos-offset="300">
         <h1>Kleuren</h1>
         <article>
             <h2>Hoofdkleuren</h2>
@@ -100,7 +103,7 @@
         </article>
     </section>
 
-    <section id="typografie">
+    <section id="typografie" data-aos="fade-up" data-aos-offset="300">
         <article>
             <h1>Typografie</h1>
             <h2>Font</h2>
@@ -162,7 +165,7 @@
         </article>
     </section>
 
-    <section id="visueel">
+    <section id="visueel" data-aos="fade-up" data-aos-offset="300">
         <h1>Visueel</h1>
         <div>
             <h2>Primaire knoppen</h2>
@@ -201,8 +204,8 @@
 
     <footer>
         <figure>
-            <a href="https://www.geschiedenisolympiade.ugent.be"> <img src="../assets/images/logo-ugent_wit.svg" alt="logo ugent"> </a> 
-            <a href="https://www.geschiedenisolympiade.ugent.be">  <img src="../assets/images/logo_faculteit.png" alt="logo ugent"> </a>
+            <a href="https://www.geschiedenisolympiade.ugent.be" target="_blank"> <img src="../assets/images/logo-ugent_wit.svg" alt="logo ugent"> </a> 
+            <a href="https://www.geschiedenisolympiade.ugent.be" target="_blank">  <img src="../assets/images/logo_faculteit.png" alt="logo ugent"> </a>
         </figure>
         <hr>
         <ul>
@@ -212,5 +215,9 @@
             <a href="#visueel"><li>Visueel</li></a>
         </ul>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

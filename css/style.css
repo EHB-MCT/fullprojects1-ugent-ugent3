@@ -19,9 +19,9 @@
     --s1_darkgray: #8C8C8C;
 
     /* STYLE 2 */
-
-
-    /* STYLE 3 */
+    --s2_orange: #FF5E00;
+    --s2_lightblue: #0099AC;
+    --s2_darkblue: #001040;
 }
 
 
@@ -142,6 +142,11 @@ body#stijltegel1 nav > a {
 body#stijltegel1 nav a {
     color: white;
     letter-spacing: 1px;
+    transition: 150ms ease-in-out;
+}
+
+body#stijltegel1 nav a:hover{
+    color: var(--s1_darkgray);
 }
 
 body#stijltegel1 header {
@@ -448,4 +453,813 @@ body#stijltegel1 footer ul a {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.8rem;
+}
+
+p::after {
+    content: '';
+    
+}
+
+/* ###---------
+    STIJLTEGEL 2
+ ---------### */
+
+ 
+ body#stijltegel2 h1,  body#stijltegel2 h2,  body#stijltegel2 h3{
+    letter-spacing: 3px;
+ }
+
+ 
+ body#stijltegel2 p{
+    letter-spacing: 1px;
+ }
+
+ body#stijltegel2 h1,  body#stijltegel2 h2{
+    font-weight:bold;
+ }
+ body#stijltegel2 h1{
+    font-size: 44px;
+ }
+ body#stijltegel2 h2{
+    font-size: 36px;
+ }
+
+ body#stijltegel2 h3{
+    font-size: 32px;
+    font-weight: 200;
+ }
+
+ .s2_container{
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 100%;
+}
+
+ body#stijltegel2 nav{
+    background-color: var(--s2_lightblue);
+    height: 85px;
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ body#stijltegel2 nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+ }
+
+ body#stijltegel2 nav ul li a{
+ color: var(--white);
+}
+
+body#stijltegel2 nav ul li a:hover{
+    color: var(--s2_orange);
+   }
+
+body#stijltegel2 nav svg{
+    align-self: end;
+    justify-self: end;
+   }
+
+
+body#stijltegel2 header{
+    height: calc(100vh - 85px);
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body#stijltegel2 header h2{
+    color: #BBBBBB;
+}
+
+
+body#stijltegel2 header div:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1;
+    z-index: 100;
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 100%;
+    
+}
+
+body#stijltegel2 > header figure{
+    justify-self: end;
+    display:grid;
+    grid-row: 1;
+    grid-column: 2/3;
+
+}
+
+body#stijltegel2 > header figure img{
+    width: 400px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+body#stijltegel2 > header figure img:nth-child(2){
+    width: 400px;
+    justify-self: start;
+    margin-top: 230px;
+    margin-left: -100px;
+    animation: top-bottom 10s infinite;
+}
+
+header> div{
+    align-self: center;
+}
+
+body#stijltegel2 header .OrangeCircle{
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: end;
+    width: 400px;
+    height: 400px;
+    margin-bottom: -200px;
+    margin-left: -150px;
+    border-radius: 300px;
+    border: 12px solid var(--s2_orange);
+    animation: left-right 10s infinite;
+    z-index: inherit;
+}
+
+body#stijltegel2 main{
+    background-color: var(--s2_orange);
+    color: var(--white);
+}
+body#stijltegel2 main article{
+    padding-top: 10%;
+    grid-column: 1/3;
+    grid-row: 1;
+    z-index: 100;
+}
+
+body#stijltegel2 main > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+body#stijltegel2 main > div>img{
+    width: 100%;
+    height: 300px;
+    align-self: start;
+    justify-self: end;
+    grid-column: 2/3;
+    grid-row: 1;
+}
+body#stijltegel2 main > section{
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+body#stijltegel2 main > section >div{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+body#stijltegel2 main > section >div > div {
+    justify-self: start;
+    align-self: center;
+}
+
+body#stijltegel2 main > section > div > p:nth-child(3) {
+    justify-self: end;
+}
+
+body#stijltegel2 main > section > div > p:nth-child(2) {
+    justify-self: center;
+}
+
+body#stijltegel2 main > section >div h3 {
+    font-size: 30px;
+}
+
+.whitecircle1{
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    border: 10px solid var(--white);
+    z-index: 9999;
+    grid-column: 1/3;
+    grid-row: 1;
+    margin-top: -120px;
+    justify-self: center;
+    animation: top-bottom 10s infinite ease;
+}
+
+
+body#stijltegel2 > figure:nth-child(4){
+display: grid;
+justify-items: center;
+align-items: start;
+}
+
+body#stijltegel2 figure:nth-child(4) img{
+    width: 200px;
+}
+
+body#stijltegel2 article:nth-child(5) > div{
+    margin-bottom: 5%;
+}
+
+
+body#stijltegel2 article:nth-child(5) > div:nth-child(3){
+    margin-top: 8%;
+}
+
+body#stijltegel2 article:nth-child(5) article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+body#stijltegel2 article:nth-child(5) >article> div {
+display: grid;
+grid-template-columns: 1fr 2fr;
+}
+
+.s2_colorsquare{
+    width: 130px;
+    height: 130px;
+    display:grid;
+    align-items: end;
+    color: white;
+    text-transform: uppercase;
+    padding: 2%;
+}
+
+.s2_colorsquare1{
+background-color: var(--s2_orange);
+}
+
+.s2_colorsquare2{
+    background-color: var(--s2_lightblue);
+}
+
+.s2_colorsquare3{
+    background-color: var(--s2_darkblue);
+}
+    
+
+
+.s2_colorsquare_right{
+    display:grid;
+}
+
+.s2_colorsquare_right h5{
+    align-self: end;
+    font-weight: 200;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 22px;
+}
+h5{
+    font-size: 20px;
+}
+
+.s2_icons{
+    display: grid;
+}
+
+.s2_icons div:nth-child(1) div:nth-child(1){
+    background-color: var(--s2_orange);
+}
+.s2_icons div:nth-child(1) div:nth-child(2){
+    background-color: var(--s2_lightblue);
+}
+
+.s2_icons div:nth-child(1) div:nth-child(3){
+    background-color: var(--s2_darkblue);
+}
+
+.s2_icons div div{
+    display: inline-grid;
+    width: 75px;
+    height: 75px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 7px 7px  0px 7px;
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+
+body#stijltegel2 > div:nth-child(6)> figure{
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    background-color: var(--s2_lightblue);
+}
+    
+body#stijltegel2 div:nth-child(6)> figure img{
+        width: 200px;
+}
+
+body#stijltegel2 .s2_buttons{
+    background-color: var(--s2_lightblue);
+    color: white;
+}
+
+.s2_bluecircle{
+    width: 300px;
+    height: 300px;
+    border: 10px solid var(--s2_lightblue);
+    border-radius: 200px;
+    justify-self: end;
+    margin-right: -200px;
+    margin-bottom: -50px;
+    margin-top: -200px;
+    animation: left-right infinite 10s;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.s2_buttons div a{
+    display: inline-block;
+    padding: 20px;
+}
+
+body#stijltegel2 .s2_buttons a{
+font-weight: bold;
+border-radius: 7px 7px 0px 7px;
+margin-bottom: 2%;
+display:inline-grid;
+margin-right: 5%;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+body#stijltegel2 a img{
+width: 30px;
+justify-self: end;
+align-self: end;
+grid-column: 3;
+}
+
+body#stijltegel2 .s2_buttons h3{
+    margin-bottom: 5%;
+}
+
+body#stijltegel2 .buttongrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+body#stijltegel2 .s2_buttons div:nth-child(2){
+    border-bottom: solid 2px var(--white);
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+}
+
+body#stijltegel2 .buttonorange{
+    background-color: var(--s2_orange);
+}
+
+body#stijltegel2 .buttondarkblue{
+    background-color: var(--s2_darkblue);
+}
+
+body#stijltegel2 .buttondarkbluehover{
+    background-color: var(--s2_darkblue);
+    opacity: 90%;
+}
+
+body#stijltegel2 .buttonorangehover{
+    background-color: var(--s2_orange);
+    opacity: 90%;
+}
+
+body#stijltegel2 .s2_buttons {
+    padding-bottom: 5%;
+}
+
+body#stijltegel2 footer{
+    background-color: var(--s2_darkblue);
+    color: white;
+}
+
+body#stijltegel2 footer a{
+    color: white;
+}
+
+body#stijltegel2 .trianglefig{
+    background-color: var(--s2_lightblue);
+    display: grid;
+
+}
+
+body#stijltegel2 .trianglefig img{
+    width: 600px;
+    margin-bottom: -10px;
+    justify-self: end;
+    align-self: end;
+    grid-row: 1;
+}
+
+
+body#stijltegel2 .trianglefig > div{
+    grid-row: 1;
+    margin-bottom: -125px;
+    margin-left: -125px;
+}
+
+body#stijltegel2 .s2_whitecirclediv{
+    width: 250px;
+    height: 250px;
+    border-radius: 300px;
+    border: 10px solid var(--white);
+    animation: top-bottom infinite 10s;
+}
+
+
+body#stijltegel2 footer{
+    padding: 5%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+body#stijltegel2 footer ul {
+    margin-top: 5%;
+    border-right: solid 2px white;
+    padding: 5%;
+}
+
+body#stijltegel2 footer ul li{
+    display: inline-grid;
+    margin-left: 20px;
+}
+
+body#stijltegel2 footer ul li a:hover{
+    color: var(--s2_orange);
+}
+
+body#stijltegel2 footer> div{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+body#stijltegel2 footer img:nth-child(1){
+    width: 30%;
+    align-self: center;
+    justify-self: center;
+}
+
+body#stijltegel2 footer img:nth-child(2){
+    width: 60%;
+    justify-self: start;
+}
+ 
+
+ /* ###---------
+    STIJLTEGEL 3
+ ---------### */
+
+ body#stijltegel3 {
+	background-color: white;
+	color: black;
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	font-family: "Encode Sans", sans-serif;
+	font-size: 20px;
+}
+
+body#stijltegel3 .wrapper {
+	position: absolute;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(34, minmax(100px, auto));
+	/*grid-gap: 10px;*/
+	/*justify-items: left;
+	align-items: center;*/
+}
+
+body#stijltegel3 .logo {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	width: 100%;
+}
+
+body#stijltegel3 .faculteit {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	width: 100%;
+}
+
+body#stijltegel3 .titel {
+	grid-column: 1/9;
+	grid-row: 3/3;
+	font-size: 70px;
+	margin: 0;
+	text-align: center;
+	margin-bottom: 120px;
+	color: white;
+}
+
+body#stijltegel3 .titels {
+	color: #d742d3;
+}
+body#stijltegel3.paragraafTitel {
+	color: #d742d3;
+}
+
+body#stijltegel3 h1 {
+	font-family: "neutral_facebold";
+	text-transform: uppercase;
+}
+
+body#stijltegel3 h2 {
+	font-size: 60px;
+	margin: 0;
+	font-family: "neutral_facebold";
+	text-transform: uppercase;
+}
+
+body#stijltegel3 #kleurTitel {
+	grid-column: 2/3;
+	grid-row: 4/6;
+	margin-top: 70px;
+}
+
+body#stijltegel3 #lettertypes {
+	grid-column: 2/3;
+	grid-row: 8/9;
+}
+
+body#stijltegel3 h3 {
+	font-size: 40px;
+	margin: 0;
+	font-family: "neutral_facebold";
+	text-transform: uppercase;
+}
+
+body#stijltegel3 h4 {
+	font-size: 40px;
+	margin: 0;
+	font-family: "neutral_facebold";
+	text-transform: uppercase;
+}
+
+body#stijltegel3 .titels {
+	grid-column: 2/3;
+	grid-row: 9/10;
+}
+
+body#stijltegel3 .neutralFace {
+	grid-column: 2/4;
+	grid-row: 10/11;
+}
+
+body#stijltegel3 .neutralFacePara {
+	font-size: 12px;
+	grid-column: 2/4;
+	grid-row: 11/12;
+}
+
+body#stijltegel3 .lijn {
+	background-color: #c8d2e8;
+	grid-column: 2/8;
+	grid-row: 12/13;
+	height: 5px;
+}
+
+body#stijltegel3 .lijn2 {
+	background-color: #c8d2e8;
+	grid-column: 2/8;
+	grid-row: 21/22;
+	height: 5px;
+}
+
+body#stijltegel3 .lijn3 {
+	background-color: #c8d2e8;
+	grid-column: 2/8;
+	grid-row: 24/25;
+	height: 5px;
+}
+
+body#stijltegel3 .lijn4 {
+	background-color: #c8d2e8;
+	grid-column: 2/8;
+	grid-row: 28/29;
+	height: 5px;
+}
+
+body#stijltegel3 .paragraafTitel {
+	grid-column: 2/3;
+	grid-row: 13/14;
+}
+
+body#stijltegel3 .encode {
+	padding-top: 10px;
+	grid-column: 2/4;
+	grid-row: 14/15;
+}
+
+body#stijltegel3 .encode h4 {
+	font-family: "Encode Sans", sans-serif;
+}
+
+body#stijltegel3 .encoderParagraaf {
+	grid-column: 2/5;
+	grid-row: 15/16;
+}
+
+body#stijltegel3 .logoGeschiedenis {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	padding-top: 30px;
+	padding-left: 20px;
+}
+body#stijltegel3 .logoGeschiedenis img {
+	width: 110%;
+}
+
+body#stijltegel3 .spatie {
+	height: 150px;
+	grid-column: 1/9;
+	grid-row: 16/17;
+}
+
+body#stijltegel3 .blue {
+	grid-column: 1/9;
+	grid-row: 17/32;
+	background-color: #6e93e2;
+}
+
+body#stijltegel3 #pictogrammen {
+	grid-column: 2/3;
+	grid-row: 18/19;
+	color: white;
+	display: grid;
+}
+
+body#stijltegel3 .social {
+	grid-column: 1/9;
+	grid-row: 19/20;
+	text-align: center;
+	color: white;
+}
+
+body#stijltegel3 .social h4 {
+	padding-bottom: 30px;
+}
+
+body#stijltegel3 .logoSocial {
+	grid-column: 2/6;
+	grid-row: 20/21;
+	align-items: stretch;
+}
+
+body#stijltegel3 .logoSocial img {
+	height: 80px;
+    width: 80px;
+	scale: 90%;
+	border-radius: 16px;
+}
+
+body#stijltegel3 .logoSocial img:hover {
+	height: 80px;
+	scale: 100%;
+}
+
+body#stijltegel3 .button {
+	grid-column: 1/9;
+	grid-row: 22/23;
+
+	text-align: center;
+}
+body#stijltegel3 .button a {
+	background-color: #d742d3;
+	padding: 20px 30px 20px 30px;
+
+	border-radius: 15px;
+	color: white;
+}
+
+body#stijltegel3 .button a:hover {
+	background-color: #6e93e2;
+	color: #d742d3;
+	border: 5px;
+	border-style: solid;
+	border-color: #d742d3;
+	font-weight: bold;
+}
+
+body#stijltegel3 .button h4 {
+	padding-bottom: 50px;
+	color: white;
+}
+
+body#stijltegel3 .hamburger {
+	grid-column: 1/9;
+	grid-row: 26/27;
+
+	text-align: center;
+	color: white;
+}
+
+body#stijltegel3 .hamburger img {
+	scale: 30%;
+}
+
+body#stijltegel3 .accenten {
+	grid-column: 1/9;
+	grid-row: 30/31;
+
+	text-align: center;
+	color: white;
+}
+
+body#stijltegel3 .accenten img {
+	scale: 50%;
+}
+
+body#stijltegel3 .pink {
+	grid-column: 1/9;
+	grid-row: 32/35;
+
+	background-color: #d742d3;
+}
+
+body#stijltegel3 .navigatieLogo {
+	grid-column: 4/9;
+	grid-row: 33/34;
+
+	scale: 50%;
+}
+body#stijltegel3 .navigatieFooter {
+	grid-column: 1/4;
+	grid-row: 33/34;
+	margin-top: 85px;
+	margin-left: 20px;
+}
+body#stijltegel3 .navigatieFooter a {
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+body#stijltegel3 .navigatieFooter a:hover {
+	color: yellow;
+}
+
+body#stijltegel3 a {
+	text-decoration: none;
+	color: #6e93e2;
+	margin: 10px;
+    font-family: "Encode Sans";
+}
+
+body#stijltegel3 a:hover {
+	color: #d742d3;
+}
+
+body#stijltegel3 .navigatie {
+	text-align: center;
+	grid-column: 6/9;
+	grid-row: 1/2;
+	align-items: stretch;
+	padding-top: 40px;
+	font-weight: bold;
+}
+
+body#stijltegel3 .backgroundImage {
+	grid-column: 1/9;
+	grid-row: 2/4;
+	width: 100%;
+	max-height: 320px;
+}
+
+body#stijltegel3 .kleurenpallet {
+	grid-row: 6/7;
+	grid-column: 1/4;
+	scale: 80%;
+	padding-left: 35px;
+}
+body#stijltegel3 .kleurenpallet img {
+	width: 100%;
+}
+
+body#stijltegel3 .grid-view div {
+	/*border: 1px dotted red;*/
+	z-index: 999;
+}
+
+body#stijltegel3 .grid-view {
+	grid-column: 1 / span all;
+	grid-row: 1 / span all;
 }
