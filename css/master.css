@@ -1,0 +1,97 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.container-fluid{
+    width: 100%;
+    padding: 0 15px;
+}
+
+h1{
+    font-size: 40px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+h2{
+    font-size: 35px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+h3{
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+h4{
+    font-size: 25px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;   
+}
+
+h5{
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+h6{
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;   
+}
+
+p{
+    font-size: 16px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+}
+footer p{
+    font-size: 14px;
+}
+
+ins{
+    text-decoration: underline;
+}
+
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,106 @@
+/* ###---------
+    GENERAL
+ ---------### */
+
+:root{
+    /* PRIMARY */
+    --black: #000000;
+    --white: #ffffff;
+
+    /* STYLE 1 */
+    --s1_blue: #2850E0;
+    --s1_darkblue: #121CA1;
+    --s1_lighterblue: #6192D8;
+    --s1_lightblue: #BBD0EE;
+    --s1_orange: #E26A35;
+    --s1_yellow: #E9B849;
+    --s1_lightyellow: #F9D52D;
+
+    /* STYLE 2 */
+
+
+    /* STYLE 3 */
+}
+
+
+/* ###---------
+    INDEX PAGE
+ ---------### */
+
+body#index {
+    padding: 0 5em;
+    padding-top: 5em;
+}
+
+body#index main header img {
+    width: 100px;
+}
+
+body#index main header {
+    margin-bottom: 2em;
+    font-weight: 500;
+}
+
+body#index main > section h2 {
+    color: var(--s1_darkblue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+body#index main > section h1 {
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+
+body#index main article {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+    transition: 300ms ease-in-out;
+}
+
+body#index main article a{
+    width: 350px;
+    height: 350px;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transition: 300ms ease-in-out;
+
+}
+
+body#index main article a:hover{
+    border-radius: 20px;
+}
+
+body#index main article a:nth-child(1){
+    background-image: url(../assets/images/index_stijltegel1.png);
+    background-position: center;
+}
+
+body#index main article a:nth-child(2){
+    background-image: url(../assets/images/index_stijltegel2.png);
+    background-position: center;
+}
+
+body#index main article a:nth-child(3){
+    background-image: url(../assets/images/index_stijltegel3.png);
+    background-position: center;
+}
+
+body#index main article a h1 {
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
