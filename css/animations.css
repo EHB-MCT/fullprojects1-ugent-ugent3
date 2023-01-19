@@ -1,0 +1,37 @@
+/*## FLOATING ## */
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 0.6rem);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+@-moz-keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 0.6rem);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+@-webkit-keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 0.6rem);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}
