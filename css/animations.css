@@ -35,3 +35,17 @@
         transform: translate(0, 0px);
     }
 }
+
+@keyframes top-bottom {
+    0%   { transform: translateY(20px); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(20px); }
+  }
+
+
+@keyframes left-right {
+    0%   { transform: translateX(20px); }
+    50%  { transform: translateX(-20px); }
+    100% { transform: translateX(20px); }
+  }
+
