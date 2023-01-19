@@ -180,7 +180,6 @@ body#stijltegel1 header video {
     bottom: 0;
     z-index: -100;
     filter: brightness(75%);
-    height: 100vh;
 }
 
 
