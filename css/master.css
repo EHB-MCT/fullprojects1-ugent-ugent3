@@ -1,14 +1,18 @@
-/* Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 /* Encode sans */
-@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
-	font-family: "neutral_facebold";
-	src: url("../assets/fonts/neutralface-bold-webfont.woff") format("woff2"), url("neutralface-bold-webfont.woff") format("woff");
+	font-family: "neutralface_regular";
+	src: url("../assets/fonts/NeutralFace.otf");
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: "neutralface_bold";
+	src: url("../assets/fonts/NeutralFace-Bold.otf");
+	font-weight: bold;
+	font-style: bold;
 }
 
 * {
@@ -35,48 +39,41 @@ body{
 
 h1{
     font-size: 40px;
-    padding: 5px;
-    font-family: 'Poppins', sans-serif;    
+    padding: 5px;   
 }
 
 h2{
     font-size: 35px;
     padding: 5px;
-    font-family: 'Poppins', sans-serif;    
 }
 
 h3{
     font-size: 30px;
     padding: 5px;
-    font-family: 'Poppins', sans-serif;    
 }
 
 h4{
     font-size: 25px;
     padding: 5px;
-    font-family: 'Poppins', sans-serif;   
 }
 
 h5{
     font-size: 20px;
     padding: 5px;
-    font-family: 'Poppins', sans-serif; 
 }
 
 h6{
     font-size: 15px;
     padding: 5px;
-    font-family: 'Poppins', sans-serif;   
 }
 
 p{
     font-size: 16px;
     padding: 5px;
-    font-family: 'Poppins', sans-serif;
 }
 
 a{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
 }
 footer p{
     font-size: 14px;
