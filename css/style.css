@@ -12,7 +12,7 @@
     --yellow: #FFD200;
 
     /* VALUES */
-   --spacer: 0 5em;
+   --spacer: 0 1em;
 }
 
 
@@ -41,7 +41,7 @@
 
 body#home nav a {
     font-family: "Encode Sans";
-    font-weight: 900;
+    font-weight: 500;
 }
 
 body#home header {
@@ -129,6 +129,11 @@ body#home section#inschrijven a {
    padding: 1em 2em;
    border-radius: 5px;
    font-family: "neutralface_bold";
+   font-size: 1.5em;
+}
+
+body#home section#inschrijven a:hover {
+   background-color: var(--yellow);
 }
 
 body#home section#socials {
@@ -178,4 +183,44 @@ body#home section#socials div a:nth-child(2){
 
 body#home section#socials div a:nth-child(3){
    transform: scale(0.7);
+}
+
+body#home section#informatie {
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+   align-items: flex-end;
+   font-family: "neutralface_bold";
+}
+
+body#home section#informatie h1 {
+   width: 50%;
+   text-align: right;
+   font-size: 4em;
+}
+
+body#home section#informatie a {
+   background-color: var(--darkblue);
+   color: var(--white);
+   padding: 1em 2em;
+   border-radius: 5px;
+   font-family: "neutralface_bold";
+   font-size: 1.2em;
+
+}
+
+body#home > section {
+   padding: var(--spacer);
+}
+
+body#home section#sponsors {
+   background-color: var(--darkerblue);
+   color: var(--white);
+   margin-top: -7px;
+   font-family: "neutralface_bold";
+
+}
+
+body#home section#sponsors h1 {
+   font-size: 4em;
 }
