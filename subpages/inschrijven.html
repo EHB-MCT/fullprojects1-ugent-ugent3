@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugent3: Home</title>
+
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/4e68a29348.js" crossorigin="anonymous"></script>
+</head>
+<body id="inschrijven">
+    <nav>
+        <a href="index.html"><img src="../assets/images/logo-ugent.svg" alt="logo-ugent"></a>
+        <ul>
+            <a href="../index.html"><li>Home</li></a>
+            <a href="../subpages/about.html"><li>Missie en visie</li></a>
+            <a href="inschrijven.html"><li>Inschrijven</li></a>
+            <a href="../subpages/Regels.pdf" target="_blank"><li>Regels</li></a>
+            <a href="../subpages/contact.html"><li>Contact</li></a>
+        </ul>
+    </nav>
+    <header>
+        <h1  data-aos="fade-up">INSCHRIJVING</h1>
+        <a class="floating"><i class="fa-solid fa-chevron-down"></i></a>
+        
+    </header>
+    <section >
+        <form  data-aos="fade-up" class="form" action="#" method="post">
+            <input type="text"  name="naam" placeholder="naam"/>
+            <input type="text"  name="voornaam" placeholder="voornaam">
+            <input type="email" name="email" placeholder="email">
+            <textarea type="text"  name="boodschap" placeholder="boodschap"></textarea>
+            <button onclick="document.getElementById('getFile').click()"><i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i><p>BESTAND KIEZEN</p></button>
+            <input type='file' id="getFile" style="display:none">
+            <input class='submit' type="submit" value="UPLOAD">
+        </form>
+    </section>
+    <figure>
+        <img src="../assets/images/darkblue_arrow_down.png">
+    </figure>
+    <article>
+        <div>
+            <h1 data-aos="fade-right">inzenden<br> vanaf</h1>
+            <h1 data-aos="fade-left">30/04/23</h1>
+        </div>
+        <div>
+            <h1 data-aos="fade-right">inzenden<br> tot</h1>
+            <h1 data-aos="fade-left">01/06/23</h1>
+        </div>
+    </article>
+    <img src="../assets/images/footer_cyan.png" alt="footer">
+    <footer>
+        <section data-aos="fade-up">
+            <h1>Heb je nog vragen?</h1>
+            <article>
+                <h1>Neem contact op</h1>
+                <p>geschiedenis.olympiade@ugent.be</p>
+            </article>
+        </section>
+        <section data-aos="fade-up">
+            <div>
+                <a href="https://www.instagram.com/geschiedenis_olympiade/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/GeschiedenisOlympiadeUGent/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/geschiedenis-olympiade-ugent-30470b254/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div>
+                <a href="https://www.geschiedenisolympiade.ugent.be"><img src="../assets/images/logo-ugent_wit.svg" alt="ugent"></a> 
+                <a href="https://www.ugent.be/nl"><img src="../assets/images/logo_faculteit.png" alt="faculteit"></a>
+            </div>
+        </section>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
