@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ugent3: Inschrijven</title>
+    <title>Ugent3: Home</title>
 
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/reset.css">
@@ -17,7 +17,7 @@
 </head>
 <body id="inschrijven">
     <nav>
-        <a href="index.html"><img src="../assets/images/logo-ugent.svg" alt="logo-ugent"></a>
+        <a href="../index.html"><img src="../assets/images/logo-ugent.svg" alt="logo-ugent"></a>
         <ul>
             <a href="../index.html"><li>Home</li></a>
             <a href="inschrijven.html"><li>Inschrijven</li></a>
@@ -31,16 +31,16 @@
         <a class="floating"><i class="fa-solid fa-chevron-down"></i></a>
         
     </header>
-    <section >
-        <form  data-aos="fade-up" class="form" action="#" method="post">
-            <input type="text"  name="naam" placeholder="naam"/>
-            <input type="text"  name="voornaam" placeholder="voornaam">
-            <input type="email" name="email" placeholder="email">
-            <textarea type="text"  name="boodschap" placeholder="boodschap"></textarea>
-            <button onclick="document.getElementById('getFile').click()"><i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i><p>BESTAND KIEZEN</p></button>
-            <input type='file' id="getFile" style="display:none">
-            <input class='submit' type="submit" value="UPLOAD">
-        </form>
+    <section >    
+    <form action="https://getform.io/f/b885caea-18f9-4ad3-9821-366ed141481e" method="POST" enctype="multipart/form-data">
+        <input type="text"  name="naam" placeholder="Naam" required/>
+        <input type="text"  name="voornaam" placeholder="Voornaam" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <textarea type="text"  name="boodschap" placeholder="Boodschap" required></textarea>
+        <input type="hidden" name="_gotcha" style="display:none !important">
+        <input type="file" name="file" required>
+        <input class='submit' type="submit" value="UPLOAD">
+     </form>
     </section>
     <figure>
         <img src="../assets/images/darkblue_arrow_down.png">
@@ -71,8 +71,8 @@
                 <a href="https://www.linkedin.com/in/geschiedenis-olympiade-ugent-30470b254/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
             <div>
-                <a href="https://www.geschiedenisolympiade.ugent.be"><img src="../assets/images/logo-ugent_wit.svg" alt="ugent"></a> 
-                <a href="https://www.ugent.be/nl"><img src="../assets/images/logo_faculteit.png" alt="faculteit"></a>
+                <a href="https://www.geschiedenisolympiade.ugent.be"><img src="assets/images/logo-ugent_wit.svg" alt="ugent"></a> 
+                <a href="https://www.ugent.be/nl"><img src="assets/images/logo_faculteit.png" alt="faculteit"></a>
             </div>
         </section>
     </footer>

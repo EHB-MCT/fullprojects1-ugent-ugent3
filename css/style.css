@@ -567,6 +567,133 @@ img {vertical-align: middle;}
    width: 700px;
  }
 
+ /* ###---------
+    STEMMEN
+ ---------### */
+
+ body#stemmen header:nth-child(3) h1{
+  font-size: 5em;
+  font-family: "neutralface_bold";
+  color: var(--white); 
+  padding-top: 20vh;
+}
+
+body#stemmen header:nth-child(3) i{
+  font-size: 5em;
+  color: var(--white); 
+}
+
+body#stemmen header{
+  background-color: var(--cyan);
+  color: var(--white); 
+  height: 85vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-top: -1vh;
+}
+
+body#stemmen > article h1{
+
+color: var(--darkerblue);
+font-size: 5em;
+letter-spacing: 4px;
+font-family: "neutralface_bold";
+margin: var(--spacer);
+}
+
+body#stemmen > article:nth-child(5){
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+}
+body#stemmen > article:nth-child(5) img{
+  margin-bottom: -20vh;
+  width: 100%;
+  z-index: -10;
+}
+body#stemmen > article:nth-child(9){
+  background-color: var(--cyan);
+  margin-top: -1vh;
+}
+
+body#stemmen > article:nth-child(9) h1:nth-child(1){
+  text-align: right;
+}
+
+body#stemmen > article:nth-child(9) h1:nth-child(2){
+  padding-bottom: 5%;
+}
+
+body#stemmen > img:nth-child(10){
+  margin-top: -1vh;
+}
+
+body#stemmen .slideshow{
+  color: var(--white);
+  margin-top: -1vh;
+  background-color: var(--darkerblue);
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  align-items: center;
+  justify-items: center;
+  font-family: "neutralface_bold";
+  font-size: 5em;
+  color: var(--white);
+
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+body#stemmen .slideshow i{
+  color: var(--cyan);
+}
+
+body#stemmen .slideshow figure{
+  height: 200px;
+  width: 300px;
+  background-color: var(--cyan);
+  position: relative;
+}
+
+body#stemmen .slideshow figure{
+  height: 300px;
+  width: 400px;
+  background-color: var(--cyan);
+  position: relative;
+  font-family: "neutralface_bold";
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: var(--white);
+}
+
+body#stemmen .slideshow .leftlogo{
+  grid-column: 2/3;
+}
+
+body#stemmen .logoslideshow{
+  display: none;
+}
+
+body#stemmen .logo1{
+  display: block;
+}
+
+body#stemmen .logo2{
+  display: block;
+}
+
+body#stemmen .arrowleft, body#stemmen .arrowright{
+  padding: 10%;
+}
+
+body#stemmen .arrowleft:hover,  body#stemmen .arrowright:hover{
+  opacity: 0.5;
+}
+
 /* ###---------
     FOOTER
  ---------### */
