@@ -1,0 +1,295 @@
+@media only screen and (max-width: 1200px) {
+    :root{
+        --spacer: 0 2em;
+        --mobilefont: 3em;
+    }
+
+    body#stemmen > article h1{
+        font-size: var(--mobilefont);
+    }
+
+    body#stemmen .slideshow{
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+    }
+
+    body#stemmen .slideshow .leftlogo{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-bottom: 10%;
+    }
+
+    body#stemmen .slideshow .rightlogo {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .arrowleft, .arrowright{
+        grid-row: 1/3;
+    }
+
+    body#stemmen .slideshow figure{
+        height: 300px;
+        width: 400px;
+    }
+
+    body#stemmen .slideshow i{
+        font-size: 0.8em;
+    }
+
+    body#about > section{
+        flex-direction:column;
+      }
+
+      body#about > section figure {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      body#about > section figure img{
+        width: 50%
+      }
+
+      body#about > section article{
+        text-align: center;
+      }
+
+      body#regels section#regels > article{
+        flex-direction: column;
+        align-items: center;
+      }
+
+      body#regels section#regels article > div{
+        width: 70%;
+        height: 100%;
+      }
+
+      body#regels section#regels article img{
+        width: 400px;
+      }
+}
+
+@media only screen and (max-width: 768px) {
+    :root{
+        --spacer: 0 1em;
+        --mobilefont: 3em;
+    }
+
+    body#home header div h1 {
+        margin-left: 0;
+        font-size: var(--mobilefont);
+    }
+
+    body#home section#intro h1 {
+        width: 100%;
+        text-align: center;
+        font-size: var(--mobilefont);
+    }
+    body#home section#intro h2 {
+        text-align: center;
+        font-size: var(--mobilefont);
+    }
+
+    body#home section#intro h1::after {
+        opacity: 0.3;
+    }
+
+    body#home header div::before {
+        opacity: 0.3;
+    }
+
+    footer {
+    }
+
+    footer h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer article {
+        align-items: center;
+    }
+
+    footer article h1 {
+        text-align: center;
+    }
+
+    footer section:nth-child(2) {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    footer p {
+        word-break: break-word;
+    }
+
+    body#home section#sponsors > article {
+        flex-direction: column;
+    }
+
+    body#home section#sponsors h1 {
+        text-align: center;
+    }
+
+    body#home section#informatie img {
+        position: absolute;
+        opacity: 0.3;
+    }
+
+    body nav a#hamburger {
+        display: block;
+    }
+
+    body#home section#informatie {
+        justify-content: center;
+    }
+
+    body#home section#informatie article {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    body#home section#informatie h1 {
+        text-align: center;
+        font-size: var(--mobilefont);
+    }
+
+    body#home section#inschrijven h1 {
+        font-size: var(--mobilefont);
+    }
+
+    body#home section#socials h1 {
+        font-size: var(--mobilefont);
+        width: 100%;
+    }
+
+    body#home section#socials {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    body#home section#socials div {
+        flex-direction: row;
+    }
+
+    body#home section#socials div a {
+        transform: scale(0.8) !important;
+    }
+
+    nav ul#navlinks {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--white);
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        transform: translateY(-100%);
+        z-index: 10000;
+        transition: 300ms ease-in-out;
+    }
+
+    nav ul#navlinks a {
+        font-weight: 600;
+        margin: 2vh 0;
+        font-size: 2em;
+    }
+
+    nav a#hamburger {
+        display: block;
+        z-index: 100000;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    body#stemmen header:nth-child(3) h1 ,
+    body#stemmen header:nth-child(3) i,
+    body#stemmen > article h1,
+    body#inschrijven header:nth-child(3) h1,
+    body#inschrijven article:nth-child(6) div h1,
+    body#about header h1,
+    body#regels header h1,
+    body#regels section#regels > h1,
+    body#regels section#regels article > div h1{
+        font-size: var(--mobilefont);
+    }
+
+    body#stemmen > article:nth-child(5){
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 17vh;
+    }
+
+    body#stemmen > article:nth-child(5) img{
+        width: 70%;
+    }
+
+    body#stemmen .slideshow{
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+    }
+
+    body#stemmen .slideshow .leftlogo{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-bottom: 10%;
+    }
+
+    body#stemmen .slideshow .rightlogo {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .arrowleft, .arrowright{
+        grid-row: 1/3;
+    }
+
+    body#stemmen .slideshow figure{
+        height: 250px;
+        width: 300px;
+    }
+
+    body#stemmen .slideshow i{
+        font-size: 0.8em;
+    }
+
+    body#inschrijven section:nth-child(4) form{
+        grid-template-columns: 1fr;
+        padding: var(--spacer);
+    }
+    body#inschrijven section:nth-child(4) form input:nth-child(1),
+    body#inschrijven section:nth-child(4) form input:nth-child(2),
+    body#inschrijven section:nth-child(4) form input:nth-child(3),
+    body#inschrijven section:nth-child(4) form textarea:nth-child(4),
+    body#inschrijven section:nth-child(4) form input:nth-child(6){
+        grid-column: 1/3;
+      }
+
+      body#about > section{
+        flex-direction:column;
+      }
+
+      body#stemmen > article:nth-child(9) h1:nth-child(2) {
+        text-align: center;
+      }
+
+      body#stemmen > article:nth-child(9) h1:nth-child(1) {
+        text-align: center;
+      }
+
+      body#inschrijven section:nth-child(4) form input:nth-child(7) {
+        grid-column: 1/5;
+      }
+
+      body#inschrijven section:nth-child(4) form input:nth-child(6){
+        grid-column: 1/5;
+    }
+
+} 
