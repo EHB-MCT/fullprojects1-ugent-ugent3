@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Encode sans */
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -113,4 +114,113 @@ footer section:nth-child(1) a:visited {
 
 footer section:nth-child(1) a:link {
     color: #000000 !important;
+=======
+/* Encode sans */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+	font-family: "neutralface_regular";
+	src: url("../assets/fonts/NeutralFace.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "neutralface_bold";
+	src: url("../assets/fonts/NeutralFace-Bold.otf");
+	font-weight: bold;
+	font-style: bold;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+body{
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.container-fluid{
+    width: 100%;
+    padding: 0 15px;
+}
+
+h1{
+    font-size: 40px;
+    padding: 5px;   
+}
+
+h2{
+    font-size: 35px;
+    padding: 5px;
+}
+
+h3{
+    font-size: 30px;
+    padding: 5px;
+}
+
+h4{
+    font-size: 25px;
+    padding: 5px;
+}
+
+h5{
+    font-size: 20px;
+    padding: 5px;
+}
+
+h6{
+    font-size: 15px;
+    padding: 5px;
+}
+
+p{
+    font-size: 16px;
+    padding: 5px;
+}
+
+a{
+    font-family: 'Encode Sans', sans-serif;
+}
+footer p{
+    font-size: 14px;
+}
+
+ins{
+    text-decoration: underline;
+}
+
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2850E0;
+>>>>>>> cfd56aa0f059c21804122fdd682fd5e40e8a13c0
 }
