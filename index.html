@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="css/media.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/4e68a29348.js" crossorigin="anonymous"></script>
 </head>
@@ -23,12 +21,27 @@
 <body id="home">
     <nav>
         <a href="index.html"><img src="assets/images/logo-ugent.svg" alt="logo-ugent"></a>
-        <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="subpages/about.html"><li>Missie en visie</li></a>
-            <a href="subpages/inschrijven.html"><li>Inschrijven</li></a>
-            <a href="subpages/Regels.pdf" target="_blank"><li>Regels</li></a>
-            <a href="subpages/contact.html"><li>Contact</li></a>
+
+        <a id="hamburger" onclick="hamburger(); return false">
+            <i id="hamburg_icon" class="fa-solid fa-bars"></i>
+        </a>
+
+        <ul id="navlinks">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="subpages/inschrijven.html">
+                <li>Inschrijven</li>
+            </a>
+            <a href="subpages/stemmen.html">
+                <li>Stemmen</li>
+            </a>
+            <a href="subpages/about.html">
+                <li>Missie en visie</li>
+            </a>
+            <a href="subpages/regels.html">
+                <li>Regels</li>
+            </a>
         </ul>
     </nav>
     <img src="assets/images/navblue.png" alt="nav">
@@ -40,13 +53,13 @@
     </header>
     <img src="assets/images/header_blueyellow.png" alt="">
     <section id="intro">
-        <h1>Wil jij graag ons logo designen?</h1>
-        <h2>Dan is dit <br> je kans!</h2>
+        <h1 data-aos="fade-up">Wil jij graag ons <i>logo</i> designen?</h1>
+        <h2 data-aos="fade-up">Dan is dit <br> je kans!</h2>
     </section>
-    <img src="assets/images/intro_below.png" style="margin-top: -7vh;" alt="arrow">
+    <img src="assets/images/intro_below.png" style="margin-top: -5vh;"  alt="arrow">
     <section id="inschrijven">
-        <h1>Schrijf je <br> groep nu in!</h1>
-        <a href="">Inschrijven</a>
+        <h1 data-aos="zoom-out">Schrijf je <br> groep nu in!</h1>
+        <a data-aos="fade-right" href="">Inschrijven</a>
     </section>
     <img src="assets/images/cyan_arrow_down.png" alt="arrow">
     <section id="socials">
@@ -59,28 +72,281 @@
     </section>
     <img src="assets/images/yellow_symbol_down.png" alt="arrow">
     <section id="informatie">
-        <h1>VOOR MEER INFORMATIE OVER DE OLYMPIADE</h1>
-        <a href="">Klik hier</a>
+        <img src="assets/images/god lineart.png" alt="lineart">
+        <article>
+            <h1 data-aos="fade-left">VOOR MEER INFORMATIE OVER DE OLYMPIADE</h1>
+            <a data-aos="fade-left" href="">Klik hier</a>
+        </article>
+
     </section>
     <img src="assets/images/white_symbol_down.png" alt="arrow">
     <section id="sponsors">
-        <h1>Onze sponsors</h1>
+        <h1 data-aos="fade-left">Onze sponsors</h1>
+
+        <article>
+            <figure>
+                <div class="slideshow-container">
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_1.png" style="width:100%;">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_3.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_4.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_5.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_6.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_7.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_8.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_9.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_10.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_11.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_12.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_13.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_14.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="assets/sponsors/sponsor_15.jpg" style="width:100%">
+                    </div>
+                </div>
+            </figure>
+
+            <figure>
+                <div class="slideshow-container">
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_16.jpg" style="width:100%;">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_17.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_18.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_19.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_20.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_21.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_22.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_23.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_24.png" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_25.png" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_26.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_27.png" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_28.png" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_29.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_30.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="assets/sponsors/sponsor_31.jpg" style="width:100%">
+                    </div>
+                </div>
+            </figure>
+
+            <figure>
+                <div class="slideshow-container">
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_32.gif" style="width:100%;">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_33.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_34.gif" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_35.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_36.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_37.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_38.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_39.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_40.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_41.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_42.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_43.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_44.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_45.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_46.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="assets/sponsors/sponsor_47.png" style="width:100%">
+                    </div>
+                </div>
+            </figure>
+        </article>
     </section>
     <img src="assets/images/footer_home.png" alt="footer">
     <footer>
         <section data-aos="fade-up">
             <h1>Heb je nog vragen?</h1>
-            <h1>Neem contact op</h1>
+            <article>
+                <h1>Neem contact op</h1>
+                <a href="mailto:geschiedenis.olympiade@ugent.be"><p>geschiedenis.olympiade@ugent.be</p></a> 
+            </article>
         </section>
         <section data-aos="fade-up">
             <div>
-
+                <a href="https://www.instagram.com/geschiedenis_olympiade/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/GeschiedenisOlympiadeUGent/"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/geschiedenis-olympiade-ugent-30470b254/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
             </div>
             <div>
-
+                <a href="https://www.geschiedenisolympiade.ugent.be"><img src="assets/images/logo-ugent_wit.svg"
+                        alt="ugent"></a>
+                <a href="https://www.ugent.be/nl"><img src="assets/images/logo_faculteit.png" alt="faculteit"></a>
             </div>
         </section>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides1();
+
+        function showSlides1() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides1");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides1, 3000);
+        }
+
+        let slideIndex2 = 0;
+        showSlides2();
+
+        function showSlides2() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides2");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex2++;
+            if (slideIndex2 > slides.length) {
+                slideIndex2 = 1
+            }
+
+            slides[slideIndex2 - 1].style.display = "block";
+            setTimeout(showSlides2, 3000);
+        }
+
+        let slideIndex3 = 0;
+        showSlides3();
+
+        function showSlides3() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides3");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex3++;
+            if (slideIndex3 > slides.length) {
+                slideIndex3 = 1
+            }
+
+            slides[slideIndex3 - 1].style.display = "block";
+            setTimeout(showSlides3, 3000);
+        }
+
+
+        function hamburger() {
+            var navlinks = document.getElementById("navlinks");
+            var hambicon = document.getElementById("hamburg_icon");
+
+            navlinks.classList.toggle("down");
+        }
+
+        let hamOpen = true;
+
+        $('#hamburger').click(function () {
+                if(hamOpen){
+                    $("body").css('overflow-y', 'hidden');
+                    hamOpen = false;
+                }   else {
+                    $("body").css('overflow-y', 'scroll');
+                    hamOpen = true;
+                }
+            } 
+        );
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
