@@ -10,6 +10,7 @@
     --darkerblue: #2850E0;
     --cyan: #78EAEA;
     --yellow: #FFD200;
+    --inactive: #A1B2F1;
 
     /* VALUES */
    --spacer: 0 6em;
@@ -21,6 +22,18 @@ body{
 
 .down {
   transform: translateY(0%) !important;
+}
+
+.active {
+  color: var(--darkerblue) !important;
+}
+
+.inactive {
+  color: var(--inactive) !important;
+}
+
+.inactive:hover {
+  color: var(--darkerblue) !important;
 }
 
 /* ###---------
@@ -53,6 +66,7 @@ body{
 body nav a {
     font-family: "Encode Sans";
     font-weight: 300;
+    transition: 100ms ease-in-out;
 }
 
 body#home header {
