@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ugent3: Home</title>
+    <meta name="description"
+        content="Welkom bij het Geschiedenis Olympiade logowedstrijd! Vul jouw logo in, en stem op jouw favouriete logo!">
+    <meta name="keywords"
+        content="geschiedenis olympiade, logowedstrijd, wedstrijd, logo, design, competitie, ugent, universiteit Gent, university gent, inschrijven, inschrijven logowedstrijd, inschrijven ugent, inschrijven universiteit gent, geschiedenis, Olympiade">
+    <meta name="authors" content="Geschiedenis olympiade">
+    <meta property="og:image" content="../assets/images/logo-ugent.svg" />
+    <meta property="og:url" content="#" />
+    <link rel="icon" href="../assets/images/logo-ugent-favicon.png" sizes="16x16">
+
+    <meta property="og:title" content="Ugent3" />
+    <title>Ugent3 | inschrijven</title>
+
 
     <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/reset.css">
@@ -16,6 +28,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/4e68a29348.js" crossorigin="anonymous"></script>
 </head>
+
 <body id="inschrijven">
     <nav>
         <a href="../index.html"><img src="../assets/images/logo-ugent.svg" alt="logo-ugent"></a>
@@ -44,23 +57,23 @@
     </nav>
     <img src="../assets/images/navblue.png" alt="nav">
     <header>
-        <h1  data-aos="fade-up">INSCHRIJVING</h1>
-        <a class="floating"><i class="fa-solid fa-chevron-down"></i></a>
-        
+        <h1 data-aos="fade-up">INSCHRIJVING</h1>
+        <a class="floating" href="#GoToForm" style="color:white;"><i class="fa-solid fa-chevron-down"></i></a>
     </header>
-    <section >    
-    <form action="https://getform.io/f/b885caea-18f9-4ad3-9821-366ed141481e" method="POST" enctype="multipart/form-data">
-        <input type="text"  name="naam" placeholder="Naam" required/>
-        <input type="text"  name="voornaam" placeholder="Voornaam" required>
-        <input type="email" name="email" placeholder="E-mail" required>
-        <textarea type="text"  name="boodschap" placeholder="Boodschap" required></textarea>
-        <input type="hidden" name="_gotcha" style="display:none !important">
-        <input type="file" name="file" required>
-        <input class='submit' type="submit" value="UPLOAD">
-     </form>
+    <section id="GoToForm">
+        <form action="https://getform.io/f/b885caea-18f9-4ad3-9821-366ed141481e" method="POST"
+            enctype="multipart/form-data">
+            <input type="text" name="naam" placeholder="Naam" required />
+            <input type="text" name="voornaam" placeholder="Voornaam" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <textarea type="text" name="boodschap" placeholder="Boodschap" required></textarea>
+            <input type="hidden" name="_gotcha" style="display:none !important">
+            <input type="file" name="file" required>
+            <input class='submit' type="submit" value="UPLOAD">
+        </form>
     </section>
     <figure>
-        <img src="../assets/images/darkblue_arrow_down.png">
+        <img src="../assets/images/darkblue_arrow_down.png" alt="divider">
     </figure>
     <article>
         <div>
@@ -78,18 +91,20 @@
             <h1>Heb je nog vragen?</h1>
             <article>
                 <h1>Neem contact op</h1>
-                <p>geschiedenis.olympiade@ugent.be</p>
+                <a href="mailto:geschiedenis.olympiade@ugent.be"><p>geschiedenis.olympiade@ugent.be</p></a>
             </article>
         </section>
         <section data-aos="fade-up">
             <div>
                 <a href="https://www.instagram.com/geschiedenis_olympiade/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/GeschiedenisOlympiadeUGent/"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/in/geschiedenis-olympiade-ugent-30470b254/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/GeschiedenisOlympiadeUGent/"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/geschiedenis-olympiade-ugent-30470b254/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
             </div>
             <div>
-                <a href="https://www.geschiedenisolympiade.ugent.be"><img src="../assets/images/logo-ugent_wit.svg" alt="ugent"></a> 
-                <a href="https://www.ugent.be/nl"><img src="../assets/images/logo_faculteit.png" alt="faculteit"></a>
+                <a href="https://www.ugent.be/nl"><img src="../assets/images/logo-ugent_wit.svg" alt="ugent"></a> 
+                <a href="https://www.geschiedenisolympiade.ugent.be"><img src="../assets/images/logo_faculteit.png" alt="faculteit"></a>
             </div>
         </section>
     </footer>
@@ -106,15 +121,16 @@
         let hamOpen = true;
 
         $('#hamburger').click(function () {
-                if(hamOpen){
-                    $("body").css('overflow-y', 'hidden');
-                    hamOpen = false;
-                }   else {
-                    $("body").css('overflow-y', 'scroll');
-                    hamOpen = true;
-                }
-            } 
+            if (hamOpen) {
+                $("body").css('overflow-y', 'hidden');
+                hamOpen = false;
+            } else {
+                $("body").css('overflow-y', 'scroll');
+                hamOpen = true;
+            }
+        }
         );
     </script>
 </body>
+
 </html>

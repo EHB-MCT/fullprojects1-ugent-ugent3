@@ -12,10 +12,18 @@
         grid-template-columns: 0.5fr 1fr 0.5fr;
     }
 
+    body#home header div h1 {
+        text-align: center;
+    }
+
     body#stemmen .slideshow .leftlogo{
         grid-column: 2/3;
         grid-row: 1/2;
         margin-bottom: 10%;
+    }
+
+    body#home section#intro {
+        background-image: none;
     }
 
     body#stemmen .slideshow .rightlogo {
@@ -38,6 +46,7 @@
 
     body#about > section{
         flex-direction:column;
+        gap: 2em;
       }
 
       body#about > section figure {
@@ -47,7 +56,7 @@
       }
 
       body#about > section figure img{
-        width: 50%
+        margin-right: 0vw;
       }
 
       body#about > section article{
@@ -65,7 +74,11 @@
       }
 
       body#regels section#regels article img{
-        width: 400px;
+        width: 300px;
+      }
+
+      body#regels section#regels article > div {
+        transform: rotate(0deg);
       }
 }
 
@@ -134,6 +147,7 @@
 
     body#home section#sponsors h1 {
         text-align: center;
+        overflow-wrap: break-word;
     }
 
     body#home section#informatie img {
@@ -159,6 +173,8 @@
     body#home section#informatie h1 {
         text-align: center;
         font-size: var(--mobilefont);
+        overflow-wrap: break-word;
+        width: 100%;
     }
 
     body#home section#inschrijven h1 {
@@ -278,7 +294,35 @@
       }
 
       body#about > section{
-        flex-direction:column;
+        flex-direction:row;
+        gap: 0em;
+      }
+
+      body#about > section figure {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+      }
+
+      body#about > section figure img {
+        object-fit: contain;
+        width: 300px;
+      }
+
+      body#about > section#missie figure img {
+        position: relative;
+        left: -9em;
+      }
+
+      body#about > section#visie figure img {
+        width: 500px;
+        position: relative;
+        right: -7em;
+        opacity: 0.5;
+      }
+
+      body#about > section article p, body#about > section article h1 {
+        text-align: left;
       }
 
       body#stemmen > article:nth-child(9) h1:nth-child(2) {
@@ -297,4 +341,31 @@
         grid-column: 1/5;
     }
 
+    body#regels section#regels > article {
+        align-items: flex-start;
+    }
+
+    body#regels section#regels > article {
+        padding: 0;
+    }
+
+    body#regels section#regels article > div {
+        width: 100%;
+    }
+
+    body#regels section#regels article img {
+        width: 100%;
+    }
+
+    body#home section#socials div a:nth-child(2) {
+        margin-left: 0;
+    }
+
+    body#home section#intro {
+        background-image: none;
+    }
+    
+    body#home section#informatie img {
+        width: 400px;
+    }
 } 
