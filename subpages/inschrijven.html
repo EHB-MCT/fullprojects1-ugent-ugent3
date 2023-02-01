@@ -57,19 +57,40 @@
     </nav>
     <img src="../assets/images/navblue.png" alt="nav">
     <header>
-        <h1 data-aos="fade-up">INSCHRIJVING</h1>
+        <h1 data-aos="fade-up">INSCHRIJVEN</h1>
         <a class="floating" href="#GoToForm" style="color:white;"><i class="fa-solid fa-chevron-down"></i></a>
     </header>
     <section id="GoToForm">
         <form action="https://getform.io/f/b885caea-18f9-4ad3-9821-366ed141481e" method="POST"
             enctype="multipart/form-data">
-            <input type="text" name="naam" placeholder="Naam" required />
-            <input type="text" name="voornaam" placeholder="Voornaam" required>
-            <input type="email" name="email" placeholder="E-mail" required>
-            <textarea type="text" name="boodschap" placeholder="Boodschap" required></textarea>
+            <div>
+                <input type="text" name="naam" id="naam" required />
+                <label for="naam">Naam</label>
+            </div>
+
+            <div>
+                <input type="text" name="voornaam" id="voornaam" required />
+                <label for="voornaam">Voornaam</label>
+            </div>
+
+            <div>
+                <input type="text" name="email" id="email" required />
+                <label for="email">E-mail</label>
+            </div>
+
+            <div>
+                <textarea type="text" name="boodschap" id="boodschap" required></textarea>
+                <label for="boodschap">Boodschap</label>
+            </div>
+
             <input type="hidden" name="_gotcha" style="display:none !important">
-            <input type="file" name="file" required>
-            <input class='submit' type="submit" value="UPLOAD">
+            <div>
+                <input type="file" name="file" required>
+            </div>
+            <div>
+                <input class='submit' type="submit" value="UPLOAD">
+            </div>
+
         </form>
     </section>
     <figure>
