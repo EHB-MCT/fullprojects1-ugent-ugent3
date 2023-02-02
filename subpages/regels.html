@@ -31,6 +31,7 @@
 
         <a id="hamburger" onclick="hamburger(); return false">
             <i id="hamburg_icon" class="fa-solid fa-bars"></i>
+            <i id="cross_icon" class="fa-solid fa-xmark"></i>
         </a>
 
         <ul id="navlinks">
@@ -105,9 +106,13 @@
         $('#hamburger').click(function () {
                 if(hamOpen){
                     $("body").css('overflow-y', 'hidden');
+                    $("#hamburg_icon").css('display', 'none');
+                    $("#cross_icon").css('display', 'block');
                     hamOpen = false;
                 }   else {
                     $("body").css('overflow-y', 'scroll');
+                    $("#hamburg_icon").css('display', 'block');
+                    $("#cross_icon").css('display', 'none');
                     hamOpen = true;
                 }
             } 
