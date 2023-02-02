@@ -16,8 +16,8 @@
   --spacer: 0 6em;
 }
 
-body{
-  overflow-x: hidden;
+body, html{
+  overflow-x: hidden ;
 }
 
 .down {
@@ -664,19 +664,19 @@ body#about section#visie + img {
    REGELS
 ---------### */
 
-body#regels header h1{
+body#regelement header h1{
   font-size: 5em;
   font-family: "neutralface_bold";
   color: var(--white); 
   padding-top: 20vh;
 }
 
-body#regels header i {
+body#regelement header i {
   font-size: 5em;
   color: var(--white); 
 }
 
-body#regels header{
+body#regelement header{
   background-color: var(--yellow);
   color: var(--white); 
   height: 85vh;
@@ -686,7 +686,7 @@ body#regels header{
   margin-top: -5px;
 }
 
-body#regels section#regels {
+body#regelement section#regels {
   margin-top: -1vh;
   background-color: var(--cyan);
   color: var(--white);
@@ -696,18 +696,18 @@ body#regels section#regels {
   padding-bottom: 5vh;
 }
 
-body#regels section#regels h1 {
+body#regelement section#regels h1 {
   font-size: 5em;
 }
 
-body#regels section#regels + img {
+body#regelement section#regels + img {
   margin-top: -1vh;
 }
 
-body#regels section#regels > h1 {
+body#regelement section#regels > h1 {
   margin-bottom: 5vh;
 }
-body#regels section#regels > a {
+body#regelement section#regels > a {
   background-color: var(--darkblue);
   color: var(--white);
   padding: 1em 2em;
@@ -717,11 +717,11 @@ body#regels section#regels > a {
   display: inline-block;
 }
 
-body#regels section#regels > a:hover {
+body#regelement section#regels > a:hover {
   background-color: var(--yellow);
 }
 
-body#regels section#regels > article  {
+body#regelement section#regels > article  {
   margin-top: 10vh;
   display: flex;
   flex-direction: row;
@@ -729,7 +729,7 @@ body#regels section#regels > article  {
   padding: 0 3em;
 }
 
-body#regels section#regels article > div {
+body#regelement section#regels article > div {
   background-color: var(--darkerblue);
   padding: 1em;
   border-radius: 10px;
@@ -738,23 +738,23 @@ body#regels section#regels article > div {
   transform: rotate(10deg);
 }
 
-body#regels section#regels article > div:hover {
+body#regelement section#regels article > div:hover {
   transform: rotate(0deg);
   transform: scale(1.1);
 }
 
 
-body#regels section#regels article > div h1 {
+body#regelement section#regels article > div h1 {
   font-size: 4em;
 }
 
-body#regels section#regels article > div p {
+body#regelement section#regels article > div p {
   font-family: "Encode Sans";
   font-weight: 300;
   font-size: 1.5em;
 }
 
-body#regels section#regels article img {
+body#regelement section#regels article img {
   width: 700px;
   margin-top: -5vh;
 }
