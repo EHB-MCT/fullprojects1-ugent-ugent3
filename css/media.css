@@ -327,6 +327,7 @@
       body#about > section{
         flex-direction:row;
         gap: 0em;
+        padding: 2em 0;
       }
 
       body#about > section figure {
@@ -341,8 +342,10 @@
       }
 
       body#about > section#missie figure img {
-        position: relative;
-        left: -9em;
+        position: absolute;
+        left: -5em;
+        width: 150px;
+        bottom: -2em;
       }
 
       body#about > section#visie figure img {
@@ -354,6 +357,13 @@
 
       body#about > section article p, body#about > section article h1 {
         text-align: left;
+      }
+      
+      body#about > section article h1 {
+        font-size: var(--mobilefont);
+      }
+      body#about > section article p {
+        font-size: 1.2em;
       }
 
       body#stemmen > article:nth-child(9) h1:nth-child(2) {
@@ -407,10 +417,25 @@
     }
     
     body#about > section article {
-
+        margin-left: 5vw;
     }
 
     footer {
         gap: 2em;
     }
+
+    body#inschrijven> img:nth-child(2) {
+        margin-bottom: -2vh;
+    }
+
+    body#about > section#visie figure {
+        transform: translate(0);
+        
+    }
+
+    body#about > section#visie figure img {
+        width: 300px;
+        right: 2em;
+    }
+    
 } 
